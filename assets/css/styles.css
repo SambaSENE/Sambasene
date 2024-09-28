@@ -6,32 +6,30 @@ body {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Effet Flou lorsque le Menu est Ouvert */
-body.blur #banner,
-body.blur #about,
-body.blur #contact,
-body.blur footer,
-body.blur .social-links {
-    filter: blur(5px);
-    transition: filter 0.3s ease;
+/* Reset des marges et paddings par défaut pour une meilleure homogénéité */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* Menu Burger */
 .burger-menu {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 15px;
+    left: 15px;
     z-index: 1100;
     color: #f0ad4e;
-    font-size: 2rem;
+    font-size: 2.5rem;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .burger-menu.hidden {
-    display: none; /* Masquer le menu burger lorsque la classe 'hidden' est ajoutée */
+    display: none;
 }
 
 .burger-menu:hover {
@@ -42,14 +40,16 @@ body.blur .social-links {
 .side-menu {
     position: fixed;
     top: 0;
-    left: -300px; /* Caché par défaut hors écran */
+    left: -100%;
     height: 100vh;
-    width: 300px;
-    background-color: rgba(34, 34, 34, 0.95); /* Semi-transparent noir */
+    width: 80%;
+    max-width: 300px;
+    background-color: rgba(34, 34, 34, 0.98);
     color: #ddd;
     z-index: 1500;
-    transition: left 0.3s ease;
-    padding: 80px 16px;
+    transition: left 0.4s ease;
+    padding: 60px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Bouton pour Fermer le Menu */
@@ -72,6 +72,7 @@ body.blur .social-links {
 .side-menu ul {
     list-style: none;
     padding-left: 0;
+    text-align: left;
 }
 
 .side-menu ul li {
@@ -81,7 +82,7 @@ body.blur .social-links {
 .side-menu ul li a {
     color: #ddd;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
@@ -92,14 +93,16 @@ body.blur .social-links {
 /* Liens Réseaux Sociaux */
 .social-links {
     position: fixed;
-    bottom: 30rem;
+    bottom: 2rem;
     left: 1rem;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-links a {
     color: #ddd;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     transition: color 0.3s, transform 0.3s ease;
 }
@@ -113,20 +116,18 @@ body.blur .social-links {
 #banner {
     position: relative;
     background-color: #111;
-    padding-left: 4rem;
-    background-image: url('../img/jr-korpa-lpMqNQ3CZao-unsplash.jpg'); /* Exemple d'image d'arrière-plan */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
+    padding: 3rem 1rem;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, #222, #111);
 }
 
 #banner .banner-text {
-    max-width: 50%;
+    margin-bottom: 2rem;
 }
 
 #banner h1 .highlight {
-    color: #f0ad4e; /* Couleur mise en évidence */
+    color: #f0ad4e;
+    font-weight: bold;
 }
 
 #banner button {
@@ -135,24 +136,152 @@ body.blur .social-links {
     color: black;
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
 }
 
 #banner button:hover {
     background-color: #d98c1a;
-    transform: scale(1.05);
+    transform: translateY(-3px);
 }
 
-/* Image dans la Section Bannière */
 #banner .banner-image img {
-    border: 10px solid rgba(187, 186, 185, 0.932);
-    width: 100%;
+    border: 8px solid rgba(187, 186, 185, 0.932);
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
 }
 
 /* Section À propos */
+#about {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #222;
+    border-radius: 15px;
+    margin: 2rem 0;
+}
+
 #about img {
+    width: 120px;
+    margin-bottom: 1.5rem;
     border-radius: 50%;
-    max-width: 200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#about p {
+    margin-bottom: 1rem;
+}
+
+/* Section Compétences */
+#skills {
+    padding: 3rem 1rem;
+    background-color: #333;
+    color: #ddd;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+#skills h2 {
+    color: #f0ad4e;
+    margin-bottom: 2rem;
+}
+
+.skills-content {
+    display: block;
+    gap: 1rem;
+}
+
+.skills-item {
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.skills-item h3 {
+    color: #f0ad4e;
+    margin-bottom: 1rem;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.progress {
+    height: 15px;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #f0ad4e;
+    line-height: 15px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    transition: width 1s ease;
+}
+
+/* Apparition progressive */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section Projets */
+#projects {
+    padding: 3rem 1rem;
+    background-color: #222;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+#projects h2 {
+    color: #f0ad4e;
+    margin-bottom: 2rem;
+}
+
+/* Section Expériences */
+#experience {
+    padding: 3rem 1rem;
+    background-color: #333;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+#experience h2 {
+    color: #f0ad4e;
+    margin-bottom: 2rem;
+}
+
+/* Section Contact */
+#contact {
+    padding: 3rem 1rem;
+}
+
+#contact a {
+    color: #f0ad4e;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -161,4 +290,62 @@ footer {
     color: #fff;
     padding: 1.5rem 0;
     margin-top: 30px;
+}
+
+/* Responsivité pour les écrans plus larges */
+@media (min-width: 768px) {
+    #banner {
+        padding: 4rem 4rem;
+        text-align: left;
+    }
+
+    #banner .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #banner .banner-text {
+        max-width: 50%;
+    }
+
+    #banner .banner-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #about {
+        padding: 4rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #about img {
+        width: 150px;
+    }
+
+    #about div {
+        max-width: 60%;
+        text-align: left;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skills-item {
+        flex: 0 0 calc(50% - 1rem);
+        margin-right: 1rem;
+    }
+
+    .skills-item:nth-child(2n) {
+        margin-right: 0;
+    }
+
+    .side-menu {
+        width: 300px;
+    }
 }

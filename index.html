@@ -1,19 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <title>Document</title>
+    <title>Portfolio - Samba SENE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
-<main class="container">
-    <h1>hello</h1>
-</main>
-<section class="container"></section>
-<section class="container"></section>
-<section class="container"></section>
-<footer class="container"></footer>
+    <!-- Menu Burger -->
+    <div id="burger-menu" class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Menu Latéral -->
+    <nav id="side-menu" class="side-menu">
+        <button id="close-menu" class="close-menu"><i class="fas fa-times"></i></button>
+        <ul>
+            <li><a href="#about" class="nav-link">À propos</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#experience" class="nav-link">Expériences</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Liens Réseaux Sociaux -->
+    <div class="social-links d-flex flex-column position-fixed">
+        <a href="https://github.com/SambaSENE" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sambasene/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/samba-sene" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <!-- Section Bannière -->
+    <section id="banner" class="d-flex align-items-center" style="height: 100vh;">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Texte de la bannière -->
+            <div class="banner-text text-start text-white me-4">
+                <h1 class="display-4">Bonjour!<br> Je suis <span class="highlight">Samba SENE</span></h1>
+                <p class="lead">Développeur Web & Web Mobile</p>
+                <button class="btn btn-warning btn-lg mt-3">Découvrir</button>
+            </div>
+            <!-- Image de la bannière -->
+            <div class="banner-image">
+                <img src="./assets/img/1670374048.png (1).png" alt="Portrait de Samba SENE"
+                    class="img-fluid rounded-circle shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="container my-5">
+        <h2 class="text-center mb-4">À propos de moi</h2>
+        <div class="content-about d-flex align-items-center">
+            <img src="./assets/img/image.png" alt="Image de présentation" class="img-fluid me-4" style="width: 200px;">
+            <div>
+                <p>
+                    Après une carrière dans l'audiovisuel et la logistique, j'ai entamé une reconversion en tant que
+                    Développeur Web & Web Mobile.
+                    Mon parcours diversifié m'a permis de développer des compétences en adaptation, résolution de
+                    problèmes et travail en équipe.
+                    Fort de mon expérience en tant que cameraman freelance, où j'anticipais et résolvais rapidement les
+                    imprévus techniques, et en tant que
+                    bénévole dans la lutte contre la fracture numérique, j'apporte une dynamique positive et une
+                    curiosité naturelle dans tous les projets.
+                </p>
+                <p>
+                    Mon enthousiasme face aux défis et ma capacité à m'adapter rapidement aux environnements de travail
+                    me permettent de fournir des solutions
+                    efficaces, en toute circonstance. Mon objectif est de favoriser des relations positives avec mes
+                    collègues, clients et partenaires.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Section Compétences -->
+     <section id="skills"></section>
+    <!-- Section Projets -->
+    <section id="projects"></section>
+    <!-- Section Experences -->
+    <section id="experience"></section>
+    <!-- Section Contact -->
+    <section id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact</h2>
+        <p class="text-center">Email: <a href="mailto:s-sene@outlook.com">s-sene@outlook.com</a></p>
+        <p class="text-center">Téléphone: 06 14 44 92 95</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Samba SENE - Tous droits réservés</p>
+    </footer>
+
+    <!-- Bootstrap JS & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

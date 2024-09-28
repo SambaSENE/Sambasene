@@ -1,0 +1,164 @@
+/* Général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #ddd;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* Effet Flou lorsque le Menu est Ouvert */
+body.blur #banner,
+body.blur #about,
+body.blur #contact,
+body.blur footer,
+body.blur .social-links {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+/* Menu Burger */
+.burger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    color: #f0ad4e;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.burger-menu.hidden {
+    display: none; /* Masquer le menu burger lorsque la classe 'hidden' est ajoutée */
+}
+
+.burger-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Menu Latéral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Caché par défaut hors écran */
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(34, 34, 34, 0.95); /* Semi-transparent noir */
+    color: #ddd;
+    z-index: 1500;
+    transition: left 0.3s ease;
+    padding: 80px 16px;
+}
+
+/* Bouton pour Fermer le Menu */
+.close-menu {
+    background: none;
+    border: none;
+    color: #f0ad4e;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-menu:hover {
+    color: #d98c1a;
+}
+
+/* Contenu du Menu Latéral */
+.side-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.side-menu ul li {
+    margin: 20px 0;
+}
+
+.side-menu ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: #f0ad4e;
+}
+
+/* Liens Réseaux Sociaux */
+.social-links {
+    position: fixed;
+    bottom: 30rem;
+    left: 1rem;
+    z-index: 1000;
+}
+
+.social-links a {
+    color: #ddd;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    transition: color 0.3s, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #f0ad4e;
+    transform: scale(1.2);
+}
+
+/* Section Bannière */
+#banner {
+    position: relative;
+    background-color: #111;
+    padding-left: 4rem;
+    background-image: url('../img/jr-korpa-lpMqNQ3CZao-unsplash.jpg'); /* Exemple d'image d'arrière-plan */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+#banner .banner-text {
+    max-width: 50%;
+}
+
+#banner h1 .highlight {
+    color: #f0ad4e; /* Couleur mise en évidence */
+}
+
+#banner button {
+    background-color: #f0ad4e;
+    border: none;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#banner button:hover {
+    background-color: #d98c1a;
+    transform: scale(1.05);
+}
+
+/* Image dans la Section Bannière */
+#banner .banner-image img {
+    border: 10px solid rgba(187, 186, 185, 0.932);
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Section À propos */
+#about img {
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1.5rem 0;
+    margin-top: 30px;
+}

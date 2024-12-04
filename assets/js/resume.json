@@ -1,0 +1,121 @@
+{
+    "nom": "Samba SENE",
+    "adresse": "4B allée du Muguet, 54000 Nancy",
+    "contact": {
+        "téléphone": "06 14 44 92 95",
+        "email": "s-sene@outlook.com"
+    },
+    "expériences_professionnelles": [
+        {
+            "année": "2024",
+            "poste": "Développeur web",
+            "lieu": "Maxéville (54)",
+            "entreprise": "Groupe Inherent (Adista)",
+            "type": "Stage 4 mois",
+            "description": "Création de composants accès aux données"
+        },
+        {
+            "période": "2018-2020",
+            "poste": "Agent administratif",
+            "lieu": "Port Nantes St-Nazaire (44)",
+            "entreprise": "Sté Terminal Grand Ouest – secteur logistique",
+            "type": "Intérim",
+            "tâches": [
+                "Inspection externe des conteneurs",
+                "Vérification des documents administratifs",
+                "Saisie informatique du dossier"
+            ]
+        },
+        {
+            "période": "2013-2018",
+            "poste": "Magasinier cariste",
+            "lieu": "Dépts 77 et 44",
+            "entreprises": [
+                "Multimat – Matériaux de construction",
+                "FedEx – Plate-forme logistique"
+            ],
+            "types": [
+                "Intérim",
+                "CDI"
+            ],
+            "tâches": [
+                "Préparation des commandes",
+                "Rassemblement des colis, inspection et tri",
+                "Traitement des anomalies",
+                "Répartition et contrôle du travail des intérimaires (4 personnes)"
+            ]
+        },
+        {
+            "période": "2008-2013",
+            "poste": "Caméraman monteur",
+            "lieu": "Sénégal",
+            "type": "Freelance",
+            "tâches": [
+                "Gestion des clients : artisans, créateurs d’entreprise, PME",
+                "Recueil des besoins du client et proposition commerciale",
+                "Élaboration du cahier des charges",
+                "Recherche de partenaires et coordination des équipes",
+                "Réalisation de la postproduction"
+            ]
+        }
+    ],
+    "compétences": {
+        "front_end": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Vue.js"
+        ],
+        "back_end": [
+            "Node.js",
+            "PHP (Symfony)",
+            ".Net (C#)"
+        ],
+        "bases_de_données": [
+            "SQL"
+        ],
+        "outils_gestion_projet": [
+            "Git"
+        ]
+    },
+    "formations": [
+        {
+            "période": "2022-2024",
+            "diplôme": "Développeur Web & Web Mobile – Bac+2",
+            "institution": "Centre de Réadaptation de Mulhouse"
+        },
+        {
+            "période": "2020-2022",
+            "type": "Auto-formation",
+            "domaines": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Initiation à l’algorithme"
+            ],
+            "réalisations": [
+                "Réalisation de sites web statiques"
+            ],
+            "plateformes": [
+                "Udemy",
+                "Open Class Room",
+                "Éditions Eni"
+            ]
+        },
+        {
+            "année": "2018",
+            "formation": "Dispositif de réorientation professionnelle",
+            "activités": [
+                "Validation métier développeur informatique",
+                "Enquêtes auprès d'une vingtaine de professionnels",
+                "Journée d'immersion sur métier développeur"
+            ],
+            "institution": "Centre la Tourmaline – Nantes"
+        },
+        {
+            "année": "2004",
+            "diplôme": "Brevet de Technicien Supérieur Audiovisuel",
+            "institution": "Université du Sahel de Dakar – Sénégal"
+        }
+    ]
+}
